@@ -41,7 +41,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBAp7bGTRSZDgpLer58ngO84IDF_lrrgIw',
+    apiKey: String.fromEnvironment('FIREBASE_WEB_API_KEY'),
     appId: '1:803081167503:web:512743065023beaf8046fa',
     messagingSenderId: '803081167503',
     projectId: 'spotify-flutter-512c5',
@@ -51,7 +51,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCCFAswaTLtqfghmYKKCUIsmAYsCCuVuoc',
+    apiKey: String.fromEnvironment('FIREBASE_ANDROID_API_KEY'),
     appId: '1:803081167503:android:d5cf230fb1687a008046fa',
     messagingSenderId: '803081167503',
     projectId: 'spotify-flutter-512c5',
@@ -59,7 +59,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCB1_58LAOx8EkbinFXcwBF-JqLBSRmnOg',
+    apiKey: String.fromEnvironment('FIREBASE_IOS_API_KEY'),
     appId: '1:803081167503:ios:7b4e08c1932510ce8046fa',
     messagingSenderId: '803081167503',
     projectId: 'spotify-flutter-512c5',
@@ -68,7 +68,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCB1_58LAOx8EkbinFXcwBF-JqLBSRmnOg',
+    apiKey: String.fromEnvironment('FIREBASE_MACOS_API_KEY'),
     appId: '1:803081167503:ios:7b4e08c1932510ce8046fa',
     messagingSenderId: '803081167503',
     projectId: 'spotify-flutter-512c5',
@@ -77,7 +77,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBAp7bGTRSZDgpLer58ngO84IDF_lrrgIw',
+    apiKey: String.fromEnvironment('FIREBASE_WINDOWS_API_KEY'),
     appId: '1:803081167503:web:d8965ab2783bda208046fa',
     messagingSenderId: '803081167503',
     projectId: 'spotify-flutter-512c5',
